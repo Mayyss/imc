@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Imc App - A</string>
+
+    <string name="login_titulo">Login</string>
+    <string name="login_subtitulo">Faça login para continuar</string>
+    <string name="login_et_email">E-mail</string>
+    <string name="login_et_senha">Senha</string>
+    <string name="login_entrar">Entrar</string>
+    <string name="login_lembrar_me">Lembrar-me</string>
+    <string name="login_esqueci">Esqueci a senha</string>
+    <string name="login_nao_tem_conta">Não tem uma conta?</string>
+    <string name="login_criar_conta">Criar uma conta agora</string>
+    <string name="trocar_foto">Trocar foto</string>
+    <string name="subtitulo_dados_autenticacao">Dados para autenticação</string>
+    <string name="e_mail">E-mail</string>
+    <string name="senha">Senha</string>
+    <string name="subtitulo_dados_pessoais">Dados pessoais</string>
+    <string name="nome">Nome</string>
+    <string name="profissao">Profissão</string>
+    <string name="altura">Altura</string>
+    <string name="data_de_nascimento">Data de nascimento</string>
+    <string name="sexo">Sexo</string>
+    <string name="feminino">Feminino</string>
+    <string name="masculino">Masculino</string>
+
+</resources>

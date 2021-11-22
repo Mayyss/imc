@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:padding="16dp"
+        android:background="@color/orange_700">
+
+        <TextView
+            android:id="@+id/tv_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bowlby_one"
+            android:gravity="end"
+            android:text="HEALTH\nCALC"
+            android:textSize="32sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@android:color/white"/>
+
+        <ImageView
+            android:id="@+id/iv_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/imc64"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/tv_titulo"
+            android:layout_alignBottom="@id/tv_titulo" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_wave_top"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:src="@drawable/wave_down"
+        android:scaleType="fitXY"
+        android:layout_below="@id/rl_header"/>
+
+    <ImageView
+        android:id="@+id/iv_wave_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:src="@drawable/wave_up"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desenvolvido por DS2T-A"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:layout_marginBottom="8dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/iv_wave_top"
+        android:layout_above="@id/iv_wave_bottom"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_titulo"
+                android:textAppearance="@style/titulo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_subtitulo"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="@string/login_et_email"
+                app:endIconMode="clear_text">
+
+                <EditText
+                    android:id="@+id/edit_login_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="@string/login_et_senha"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/edit_login_senha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberPassword"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/button_entrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login_entrar"
+                android:layout_marginTop="16dp"
+                style="@style/button_login"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_lembrar_me"
+                android:layout_gravity="end"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_esqueci"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:textAllCaps="false"
+                android:layout_gravity="end"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end|center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_nao_tem_conta"/>
+
+                <Button
+                    android:id="@+id/button_nova_conta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_criar_conta"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:textAllCaps="false"
+                    android:layout_gravity="end"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
