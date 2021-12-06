@@ -1,11 +1,13 @@
-package com.example.imcapp_a
+package com.example.imcapp_a.ui
 
+import android.content.Context.MODE_PRIVATE
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.example.imcapp_a.R
 
 class MainActivity : AppCompatActivity() {
 

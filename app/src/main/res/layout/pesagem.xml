@@ -23,7 +23,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src=""/>
+            android:src="@drawable/person_24"/>
     </androidx.cardview.widget.CardView>
     <TextView
         android:layout_width="match_parent"
@@ -45,8 +45,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Dados da sua pesagem"
-        android:textColor="#B2572A"
-        android:drawableStart=""/>
+        android:textColor="@color/orange"
+        android:drawableStart="@drawable/accessibility_new_24"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

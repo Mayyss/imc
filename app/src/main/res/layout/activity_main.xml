@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".MainActivity"
+    tools:context=".ui.MainActivity"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -21,13 +21,13 @@
             android:id="@+id/tv_titulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontfamily="@font/bowlby_one"
-            android:gravity="end"
-            android:text="HEALTH\nCALC"
-            android:textSize="32sp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:textColor="@android:color/white"/>
+            android:fontFamily="@font/montserrat"
+            android:gravity="end"
+            android:text="HEALTH\nCALC"
+            android:textColor="@android:color/white"
+            android:textSize="32sp" />
 
         <ImageView
             android:id="@+id/iv_titulo"

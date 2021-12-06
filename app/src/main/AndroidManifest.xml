@@ -9,20 +9,17 @@
         android:roundIcon="@drawable/imc64"
         android:supportsRtl="true"
         android:theme="@style/Theme.ImcAppA">
-        <activity android:name=".TesteActivity">
-
-        </activity>
-        <activity android:name=".NovoUsuarioActivity" />
+        <activity android:name=".ui.Pesagem_2"></activity>
+        <activity android:name=".ui.TesteActivity"></activity>
+        <activity android:name=".ui.NovoUsuarioActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:screenOrientation="portrait">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
 
         <meta-data

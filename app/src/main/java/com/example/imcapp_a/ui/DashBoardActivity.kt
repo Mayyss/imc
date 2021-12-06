@@ -1,16 +1,18 @@
-package com.example.imcapp_a
+package com.example.imcapp_a.ui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.EditText
 import android.widget.TextView
-import org.w3c.dom.Text
+import androidx.cardview.widget.CardView
+import com.example.imcapp_a.R
 
 class DashBoardActivity : AppCompatActivity() {
 
     lateinit var tvNome: TextView
     lateinit var tvProfissao: TextView
     lateinit var tvAltura: TextView
+    lateinit var cardPesarAgora: CardView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,6 +21,12 @@ class DashBoardActivity : AppCompatActivity() {
         tvNome = findViewById(R.id.tv_dash_nome)
         tvProfissao = findViewById(R.id.tv_dash_profissao)
         tvAltura = findViewById(R.id.tv_dash_altura)
+        cardPesarAgora = findViewById(R.id.card_pesar_agora)
+
+        cardPesarAgora.setOnClickListener{
+            val abrirPesagem = Intent(this, Pesagem_2::class.java)
+            startActivity(abrirPesagem)
+        }
 
         preencherDashboard()
 

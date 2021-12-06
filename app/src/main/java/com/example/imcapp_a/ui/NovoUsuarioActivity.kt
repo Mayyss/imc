@@ -1,4 +1,4 @@
-package com.example.imcapp_a
+package com.example.imcapp_a.ui
 
 import android.app.DatePickerDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -9,6 +9,7 @@ import android.view.MenuItem
 import android.widget.EditText
 import android.widget.RadioButton
 import android.widget.Toast
+import com.example.imcapp_a.R
 import java.util.*
 
 class NovoUsuarioActivity : AppCompatActivity() {

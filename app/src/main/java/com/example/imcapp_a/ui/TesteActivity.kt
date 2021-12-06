@@ -1,7 +1,8 @@
-package com.example.imcapp_a
+package com.example.imcapp_a.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.imcapp_a.R
 
 class TesteActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
